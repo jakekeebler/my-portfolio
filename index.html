@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
@@ -15,61 +17,86 @@
     <h1 class="page-title">Jared Keebler</h1>
     <ul>
         <li>
-            <a href="#about-me">About Me</a>
+            <a href="https://github.com/jakekeebler">GitHub</a>
         </li>
         <li>
-            <a href="#work">Work</a>
+            <a href="https://www.linkedin.com/in/jared-keebler-01a737168/">LinkedIn</a>
         </li>
         <li>
-            <a href="#contact-me">Contact Me</a>
-        </li>
-        <li>
-            <a href="#resume">Resume</a>
+            <a href="https://docs.google.com/document/d/19QP5AiPIm1RxVM2UXrqs1JW5VdPE2ECEk5VMfGa1vF8/edit?usp=sharing">Resume</a>
         </li>
     </ul>
   </header>
 
-  <div>
-    <img id="banner" src="./assets/images/banner.jpg" alt="Website Stock Banner" />
-    <h2 id="subtitle">My Portfolio!</h2>
-  </div>
 
-  <main>
-    <section class="content-blocks" id="about-me">
-        <h2>About Me</h2>
-        <p>
-             My name is Jared Keebler. I'm currently taking the UPENN coding bootcamp to become a fully fledged web developer! 
-            I've always had in interest in programming, learning languages such as Python and C# in my free-time to mess around with numerous game engines such as GODOT and Unity. 
-            Since it was fun to learn about computer programming, why not just make it my career? Below you can see all my various projects that I have worked on. 
-             Give them a click for more details!
-        </p>
-    </section>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <!-- Every grid layout we create starts with an HTML element receiving a class of row -->
+        <!-- align-items-end change the alignment of flex items to end -->
+        <div class="row align-items-start">
+          <div class="col-12 col-md-6">
+            <img class='img-fluid' src="./assets/img/hO5D_2jk_400x400.jpg" alt="video placeholder" />
+          </div>
+          <!-- Uses a combination of col-* values to make full-size on small devices and half-size on medium or larger devices -->
+          <div class="col-12 col-md-6">
+            <h1>Welcome to my Portfolio!</h1>
+            <p>My name is Jared Keebler. I am currently learning to become a full stack developer. Check out my some of works below!</p>
+            <!-- <button class="btn btn-primary">Learn more.</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <main class="container">
+      <section class="row">
+        <div class="col-12 col-md-9">
+          <h2>My Projects</h2>
+  
+          <section class="row justify-content-around">
+  
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="card">
+                <h3 class="card-header">NBA Wizard Stats</h3>
+                <div class="card-body">
+                  <p class="card-text">
+                    NBA Wizard pulls data from two different server-side APIs and presents it to the user. 
+                    The user can select their favorite team to see their current stats for this season, and they can also see what games will be going live today!
+                  </p>
+                  <button class="btn btn-block btn-info">Learn more.</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="card">
+                <h3 class="card-header">Password Generator</h3>
+                <div class="card-body">
+                  <p class="card-text">
+                    Are you having trouble thinking of a new password? Select parameters for your password and then the website will generate one for you. 
+                    You can generate a password any number of times you like until you get one you want to use!
+                  </p>
+                  <button class="btn btn-block btn-info">Learn more.</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="card">
+                <h3 class="card-header">Work Day Scheduler</h3>
+                <div class="card-body">
+                  <p class="card-text">
+                    Sometimes our schedule for the work day can get very busy. This website helps you plan your day! It will save any tasks you have in local storage, 
+                    so if you ever accidentally close your browser, your tasks will still be there.
+                  </p>
+                  <button class="btn btn-block btn-info">Learn more.</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
 
-    <section class="content-blocks" id="work">
-        <h2>Work</h2>
-
-        <h3>Surf Report</h3>
-        <p>MERN Stack</p>
-
-        <h3>LED Wall</h3>
-        <p>Node / IoT</p>
-
-        <h3>Calculator</h3>
-        <p>React / JavaScript / CSS</p>
-
-        <h3>Pastel Puzzels</h3>
-        <p>MERN Stack</p>
-
-        <h3>Run Buddy</h3>
-        <p>HTML / CSS</p>
-    </section>
-
-  </main>
-
-  <footer>
-    <h3></h3>
-  </footer>
-
-</body>
-
-</html>
+      </section>
+  
+    </main>
+  
+  </body>
+  
+  </html>
